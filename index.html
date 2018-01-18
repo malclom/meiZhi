@@ -29,7 +29,7 @@
 								<span class="us_uer"></span>
 								<input id="pwd" name="logpass" class="text" style="color: #FFFFFF !important; position:absolute; z-index:100;"value="" type="password" placeholder="请输入密码">
 							</div>
-							<div class="mb2" onclick="test()"><a class="act-but submit" href="javascript:;" style="color: #FFFFFF">登录</a></div>
+							<div class="mb2" onclick="login()"><a class="act-but submit" href="javascript:;" style="color: #FFFFFF">登录</a></div>
 						</form>
 					</div>
 				</div>
@@ -40,8 +40,8 @@
 		<script src="js/rAF.js"></script>
 		<script src="js/demo-1.js"></script>
 		<script >
-			 function test(){
-				 var passward = document.getElementById('pwd').value;
+			 function login(){
+				var passward = document.getElementById('pwd').value;
 				if(passward == '123')
 				{
 					window.location.href='main.html';

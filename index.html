@@ -21,10 +21,6 @@
 					<div class="logo_box">
 						<h3>欢迎你</h3>
 						<form action="#" name="f" method="post">
-							<!-- <div class="input_outer">
-								<span class="u_user"></span>
-								<input name="logname" class="text" style="color: #FFFFFF !important" type="text" placeholder="请输入账户">
-							</div> -->
 							<div class="input_outer">
 								<span class="us_uer"></span>
 								<input id="pwd" name="logpass" class="text" style="color: #FFFFFF !important; position:absolute; z-index:100;"value="" type="password" placeholder="请输入密码">
@@ -35,19 +31,29 @@
 				</div>
 			</div>
 		</div><!-- /container -->
+		<audio id = "longin_bgm" autoplay="autoplay" loop="loop"><source src="media/WonderfulTonight.mp3"></audio>
 		<script src="js/TweenLite.min.js"></script>
 		<script src="js/EasePack.min.js"></script>
 		<script src="js/rAF.js"></script>
 		<script src="js/demo-1.js"></script>
 		<script >
+			lowDownVolume();
+
+			//登陆验证跳转
 			 function login(){
 				var passward = document.getElementById('pwd').value;
 				if(passward == '123')
 				{
 					window.location.href='main.html';
 				}
-				
 			 }
+
+			 //降低音量
+			 function lowDownVolume(){
+				var audio = document.getElementById('longin_bgm');
+				audio.volume = 0.1;
+			 }
+
 		</script>
 		<div style="text-align:center;">
 </div>

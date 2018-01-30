@@ -23,7 +23,7 @@
 						<form action="#" name="f" method="post">
 							<div class="input_outer">
 								<span class="us_uer"></span>
-								<input id="pwd" name="logpass" class="text" value="" type="password" placeholder="请输入密码">
+								<input id="pwd" name="logpass" class="text" style="color: #FFFFFF !important; position:absolute; z-index:100;"value="" type="password" placeholder="请输入密码">
 							</div>
 							<div class="mb2" onclick="login()"><a class="act-but submit" href="javascript:;" style="color: #FFFFFF">登录</a></div>
 						</form>
@@ -40,14 +40,14 @@
 			//调低音量
 			lowDownVolume();
 
-			// //登陆验证跳转
-			//  function login(){
-			// 	var passward = document.getElementById('pwd').value;
-			// 	if(passward == '123')
-			// 	{
-			// 		window.location.href='video.html';
-			// 	}
-			//  }
+			//登陆验证跳转
+			 function login(){
+				var passward = document.getElementById('pwd').value;
+				if(passward == '123')
+				{
+					window.location.href='video.html';
+				}
+			 }
 
 			 //降低音量
 			 function lowDownVolume(){

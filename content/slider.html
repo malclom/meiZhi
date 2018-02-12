@@ -36,7 +36,10 @@
 
     <link href="../assets/css/style.css" rel="stylesheet" type="text/css" />
 
-
+    <link href="https://vjs.zencdn.net/5.19/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/effects.css" />
+    <script src="https://vjs.zencdn.net/ie8/1.1/videojs-ie8.min.js"></script>
+    <script src="https://vjs.zencdn.net/5.19/video.js"></script>
 
 </head>
 
@@ -78,8 +81,17 @@
 
             <div>
 
-                <div class="counter"></div>
-
+                <!-- <div class="counter"></div> -->
+            <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="640" height="264" poster="" data-setup="{}">
+                <source src="../assets/video/meizi.mp4" type="video/mp4">
+                <!-- <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+                <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg"> -->
+                <!-- <track kind="captions" src="../shared/example-captions.vtt" srclang="en" label="English"></track>
+                <!- Tracks need an ending tag thanks to IE9 -->
+                <!-- <track kind="subtitles" src="../shared/example-captions.vtt" srclang="en" label="English"></track> -->
+                <!-- Tracks need an ending tag thanks to IE9 -->
+                <!-- <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p> -->
+            </video>
             </div>
             <!-- /// end Body ///  -->
 

@@ -106,3 +106,11 @@
 	border-radius: 50px;
 	background: #0096e6;
 }
+/* input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+    background-color: transparent!important;
+} */
+/* 
+input:-webkit-autofill { 
+	-webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0,0.1) inset ; 
+	}  */
+	:-webkit-autofill {  -webkit-text-fill-color: #fff !important;  transition: background-color 5000s ease-in-out 0s; } 
